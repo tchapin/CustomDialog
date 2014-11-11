@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Custom Reusable Dialog</title>
+    <link rel="stylesheet" type="text/css" href="//js.arcgis.com/3.11/dojo/resources/dojo.css">
+    <link rel="stylesheet" type="text/css" href="//js.arcgis.com/3.11/esri/css/esri.css">
+    <link rel="stylesheet" type="text/css" href="//js.arcgis.com/3.11/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body class="claro">
+
+
+    <script type="text/javascript">
+        var path_location = location.pathname.replace(/[^\/]+$/, '');
+        var dojoConfig = {
+            async: true,
+            packages: [{
+                name: "js",
+                location: path_location + "js"
+            }]
+        };
+    </script>
+    <script src="//js.arcgis.com/3.11"></script>
+    <script src="app.js"></script>
+</body>
+</html>
